@@ -52,8 +52,9 @@ hidden state. These score are then combined and softmax is applied on them. To g
 contextual information, the softmaxed scores and the encoder hidden states are then combined to
 formulate a vector representation. This vector is then combined to the last decoder hidden state and
 fed into the RNN to produce a new word respectively. This complete procedure is recursive in nature
-and the stopping criteria is till the length of caption generated surpasses the maximum length.</p> To
-simplify and formulate generalized approach we followed the below mentioned steps -
+and the stopping criteria is till the length of caption generated surpasses the maximum length.</p>
+## Steps Followed
+To simplify and formulate generalized approach we followed the below mentioned steps -
 - We extracted the features from the lower convolutional layer of VGG16 giving us a vector
 with 512 output channels.
 - This vector is then passed through the CNN Encoder which consists of a single fully
