@@ -44,6 +44,25 @@ feature extraction model.
 words in the data.
 - Padded all the sequence to be the same length as the longest one.
 
+## Model Architecture
+<p align = "justify"> We are using the Local attention based architecture for our model [4].Firstly, it produces the encoder
+hidden states, i,e encoder will produce hidden states for all the images in the input sequences. Then
+the alignment score is being calculated for each hidden state of the encoder and the decoder’s previous
+hidden state. These score are then combined and softmax is applied on them. To generate the
+contextual information, the softmaxed scores and the encoder hidden states are then combined to
+formulate a vector representation. This vector is then combined to the last decoder hidden state and
+fed into the RNN to produce a new word respectively. This complete procedure is recursive in nature
+and the stopping criteria is till the length of caption generated surpasses the maximum length.</p> To
+simplify and formulate generalized approach we followed the below mentioned steps -
+- We extracted the features from the lower convolutional layer of VGG16 giving us a vector
+with 512 output channels.
+- This vector is then passed through the CNN Encoder which consists of a single fully
+connected layer followed by a dropout layer.
+- The Recurrent Neural Network(here GRU), the takes in the image to predict the next word.
+- Furthermore, the attention based model enables us to see what parts of the image the model
+focuses on as it generates a caption.
+
+
 ## Evaluation
 <p align = "justify">
 We are using greedy approach to evaluate the captions generated. The greedy approach computes the
@@ -62,7 +81,7 @@ caption. We are also monitoring the BLEU score for the test images. We ran our m
 test images and plotted the attention plot, so as to observe which part of the image was focused upon
 while predicting a particular word in a caption. In attention plot in figure below, <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/snow_dog.PNG" width="800" height="400"></center>
   <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/snow_attention.png" width="800" height="400"></center>
-we can observe that for every image the important feature is being highlighted and the predicted word is
+We can observe that for every image the important feature is being highlighted and the predicted word is
 being also mentioned for that particular important feature. This clearly tells us that not every part of
 the image is important to predict a caption. Also, we can miss out on several minute details if we
 don’t use this kind of attention architecture. </p>
