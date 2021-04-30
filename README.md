@@ -2,8 +2,6 @@
 
 <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/attention.png" width="800" height="400"></center>
 
-# Author - Gourang Patel [www.linkedin.com/in/gourang-patel]
-
 ## Idea
 
 <p align="justify">We are trying to encounter the problem faced by the "classic" image captioning method using the
