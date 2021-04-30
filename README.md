@@ -1,6 +1,6 @@
 # Attention Based Image Captioning System [NLP Application]
 
-<br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/attention.png" width="800" height="400"></center>
+<br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/model_architecture.png" width="800" height="400"></center>
 
 ## Idea
 
@@ -53,6 +53,8 @@ contextual information, the softmaxed scores and the encoder hidden states are t
 formulate a vector representation. This vector is then combined to the last decoder hidden state and
 fed into the RNN to produce a new word respectively. This complete procedure is recursive in nature
 and the stopping criteria is till the length of caption generated surpasses the maximum length.</p>
+<br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/attention.png" width="800" height="400"></center>
+
 
 ## Steps Followed 
 To simplify and formulate generalized approach we followed the below mentioned steps -
