@@ -33,7 +33,7 @@ contains a total of 8092 images each with 5 captions, in total we have 40460 pro
 captions.</p>
 <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/dataset.png" width="800" height="400"></center>
 
-## Dataset Preprocessing
+## Dataset Preprocessing 
 - We conducted following data Preprocessing steps
 - Cleaned the captions by removing punctuations, single characters, and numeric values.
 - Added start and end tags for every caption, so that model understands the start and end of
@@ -89,7 +89,7 @@ image and generates semantically sound captions as well. We can further work on 
 so as to improve on the BLEU scores and predict more closer ground truth captions for an image.</p>
 
 ## Future Scope
-<p align = "justify">
+
 In order to further improve the accuracy scores, we can try different things like:
 - Use of the larger datasets, especially MS COCO dataset or the Stock3M dataset which is 26
 times larger than MS COCO.
@@ -101,6 +101,6 @@ Semantic Attention [6].
 rate) in order to generate better captions.
 -  We also want to address issues like model monitoring and interpretability using several
 different methods.
-  </p>
+
 
 
