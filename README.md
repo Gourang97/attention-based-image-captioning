@@ -1,6 +1,6 @@
 # Attention Based Image Captioning System [NLP Application]
 
-<br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/model_architecture.png" width="800" height="400"></center>
+<br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/model_architecture.PNG" width="800" height="400"></center>
 
 ## Idea
 
