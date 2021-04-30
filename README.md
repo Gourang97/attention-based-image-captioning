@@ -68,8 +68,7 @@ we can observe that for every image the important feature is being highlighted a
 being also mentioned for that particular important feature. This clearly tells us that not every part of
 the image is important to predict a caption. Also, we can miss out on several minute details if we
 don’t use this kind of attention architecture. </p>
-<p align = "justify">In figure below , <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/dog_attention.png" width="800" height="400"></center>
-<br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/result_dog.png" width="800" height="400"></center>
+<p align = "justify">In figure below -  <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/dog_attention.png" width="800" height="400"></center>
  the ground truth caption was "Two white dogs are playing in snow". The predicted
 caption is "Two white dogs run across the snow". The reported BLEU score is 61:47, which is very
 significant. If we compare our results to the ground truth result which is around 75.
@@ -77,7 +76,8 @@ In figure, the ground truth caption was "Black dog with red collar is jumping in
 predicted caption is "black dog with red collar is jumping through the water" and the observed BLEU
 score is 67:32 which is also very significant. From the results of both the test images we observed
 that our model is able to reproduce significantly good captions. The captions are also semantically
-appropriate and they report outstanding BLEU scores.</p>
+appropriate and they report outstanding BLEU scores.
+<br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/result_dog.png" width="800" height="400"></center></p>
 
 ## Conclusion
 <p align = "justify">
