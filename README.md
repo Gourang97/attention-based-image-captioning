@@ -35,14 +35,14 @@ captions.</p>
 
 ## Dataset Preprocessing
 - We conducted following data Preprocessing steps
-• Cleaned the captions by removing punctuations, single characters, and numeric values.
-• Added start and end tags for every caption, so that model understands the start and end of
+- Cleaned the captions by removing punctuations, single characters, and numeric values.
+- Added start and end tags for every caption, so that model understands the start and end of
 each caption.
-• Resized images to 224 X 224 followed by pixel normalization to suit our VGG16 image
+- Resized images to 224 X 224 followed by pixel normalization to suit our VGG16 image
 feature extraction model.
-• Tokenized the captions (for example, by splitting on spaces) to obtain a vocabulary of unique
+- Tokenized the captions (for example, by splitting on spaces) to obtain a vocabulary of unique
 words in the data.
-• Padded all the sequence to be the same length as the longest one.
+- Padded all the sequence to be the same length as the longest one.
 
 ## Evaluation
 <p align = "justify">
@@ -91,15 +91,16 @@ so as to improve on the BLEU scores and predict more closer ground truth caption
 ## Future Scope
 <p align = "justify">
 In order to further improve the accuracy scores, we can try different things like:
-• Use of the larger datasets, especially MS COCO dataset or the Stock3M dataset which is 26
+- Use of the larger datasets, especially MS COCO dataset or the Stock3M dataset which is 26
 times larger than MS COCO.
-• Implement different attention mechanism like Adaptive Attention using Visual Sentinel and
+- Implement different attention mechanism like Adaptive Attention using Visual Sentinel and
 Semantic Attention [6].
-• Implementing a Transformer based model which should perform much better than GRU.
-• Implementing a better architecture for image feature extraction like Inception, Xception.
-• We can do more hyperparameter tuning(learning rate, batch size, number of units, dropout
+- Implementing a Transformer based model which should perform much better than GRU.
+- Implementing a better architecture for image feature extraction like Inception, Xception.
+- We can do more hyperparameter tuning(learning rate, batch size, number of units, dropout
 rate) in order to generate better captions.
-• We also want to address
+-  We also want to address issues like model monitoring and interpretability using several
+different methods.
   </p>
 
 
