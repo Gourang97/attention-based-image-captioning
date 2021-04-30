@@ -9,7 +9,7 @@
 <p align="justify">We are trying to encounter the problem faced by the "classic" image captioning method using the
 Attention mechanism in the decoder. The attention mechanism will help the decoder to focus
 on relevant parts of the image. The decoder will only use specific parts of the image rather than
-conditioning on the entire hidden state h produced from the convolutional neural network.We can observe in the figure <br/><center><img src="https://github.com/Gourang97/Fashion_dataset_uml/blob/master/Results/Dataset_img.PNG" width="800" height="400"></center></p>, there is one additional layer from the classic architecture, and this new
+conditioning on the entire hidden state h produced from the convolutional neural network.We can understand that there is one additional layer from the classic architecture, and this new
 layer makes the model as attention model. While predicting the next word while generating captions
 for an image, if we have previously predicted i words, the hidden state will be hi. Then the model
 will select the relevant part of the image using the attention mechanism which will be zi (which
@@ -62,7 +62,7 @@ closer to one that means that the prediction is very close to the ground truth.<
 have plotted attention plots and are also observing the predicted captions, with respect to the original
 caption. We are also monitoring the BLEU score for the test images. We ran our model on several
 test images and plotted the attention plot, so as to observe which part of the image was focused upon
-while predicting a particular word in a caption. In attention plot in figure below, <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/snow_dog.png" width="800" height="400"></center>
+while predicting a particular word in a caption. In attention plot in figure below, <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/snow_dog.PNG" width="800" height="400"></center>
   <br/><center><img src="https://github.com/Gourang97/attention-based-image-captioning/blob/main/Result%20images/snow_attention.png" width="800" height="400"></center>
 we can observe that for every image the important feature is being highlighted and the predicted word is
 being also mentioned for that particular important feature. This clearly tells us that not every part of
